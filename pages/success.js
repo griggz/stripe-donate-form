@@ -1,9 +1,7 @@
 import styled from "@emotion/styled";
 // import Confetti from "react-confetti";
 import { useState, useEffect } from "react";
-
-import Layout from "../../apps/stripe-donate/components/Layout";
-import Row from "../../apps/stripe-donate/components/prebuilt/Row";
+import Layout from "../components/Layout";
 
 const Container = styled.div`
   width: 475px;

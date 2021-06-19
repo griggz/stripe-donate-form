@@ -8,7 +8,7 @@ module.exports = {
     STRIPE_API_AUTH_TOKEN: process.env.STRIPE_API_AUTH_TOKEN,
     EXCHANGE_API_KEY: process.env.EXCHANGE_API_KEY,
     // EXTERNAL APP TOKENS
-    STRIPE_URL_TOKEN: process.env.STRIPE_URL_TOKEN,
+    URL_ACCESS_TOKEN: process.env.URL_ACCESS_TOKEN,
   },
   images: {
     domains: ["images.unsplash.com", "source.unsplash.com"],

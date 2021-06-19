@@ -1,6 +1,13 @@
-import MainPage from '../index.js'
+import { useRouter, withRouter } from "next/router";
+import MainPage from '../../components/views/Main'
 
-const SpanishMainPage = props => {
+const SpanishMainPage = () => {
+  const router = useRouter();
+
+  if (router.query.token !== process.env.URL_ACCESS_TOKEN) {
+    return ""
+  }
+
   return (
     <MainPage
       language='SPANISH'
@@ -8,4 +15,4 @@ const SpanishMainPage = props => {
   )
 }
 
-export default SpanishMainPage
+export default withRouter(SpanishMainPage)

@@ -1,6 +1,13 @@
-import MainPage from '../index.js'
+import { useRouter, withRouter } from "next/router"
+import MainPage from '../../components/views/Main'
 
-const ArabicMainPage = props => {
+const ArabicMainPage = () => {
+  const router = useRouter();
+
+  if (router.query.token !== process.env.URL_ACCESS_TOKEN) {
+    return ""
+  }
+
   return (
     <MainPage
       language='ARABIC'
@@ -8,4 +15,4 @@ const ArabicMainPage = props => {
   )
 }
 
-export default ArabicMainPage
+export default withRouter(ArabicMainPage)

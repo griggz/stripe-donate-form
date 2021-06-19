@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const phoneInput = (props, ref) => {
+const PhoneInput = (props, ref) => {
   const classes = useStyles();
 
   return (
@@ -27,4 +27,4 @@ const phoneInput = (props, ref) => {
     />
   );
 };
-export default forwardRef(phoneInput);
+export default forwardRef(PhoneInput);
